@@ -1,12 +1,12 @@
 def versions = [
-    support: '27.1.0',
+    support: '28.0.0',
 ]
 
 def build = [
-    buildToolsVersion: '27.0.3',
-    compileSdkVersion: 27,
+    buildToolsVersion: '28.0.3',
+    compileSdkVersion: 28,
     minSdkVersion: 14,
-    targetSdkVersion: 27,
+    targetSdkVersion: 28,
 
     gradlePlugins: [
         android: 'com.android.tools.build:gradle:3.0.1',

@@ -80,7 +80,7 @@ public class SimpleText extends SpannableString {
   public SimpleText allStartWith(String... prefixs) {
     rangeList.clear();
     for (String prefix : prefixs) {
-      List<Range> ranges = Utils.ranges(toString(), Pattern.quote(prefix) + "\\w+");
+      List<Range> ranges = Utils.ranges(toString(), Pattern.quote(prefix) + "\\S+");
       rangeList.addAll(ranges);
     }
     return this;
